@@ -12,7 +12,7 @@
     data: () => ({
     }),
     mounted() {
-
+      $("#test").html("Hello world")
       const URLCss = [
         { href: 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' },
         { href: '../assets/plugins/jquery-ui/jquery-ui.min.css' },
@@ -49,13 +49,13 @@
           document.head.appendChild(Link);
       }
 
-      // for (const url of URLJs) {
-      //     const Script = document.createElement('script');
-      //     Script.setAttribute('type', 'text/javascript');
-      //     Script.setAttribute('src', url.href);
+    //   for (const url of URLJs) {
+    //       const Script = document.createElement('script');
+    //       Script.setAttribute('type', 'text/javascript');
+    //       Script.setAttribute('src', url['href']);
           
-      //     document.body.appendChild(Script);
-      // }
+    //       document.body.appendChild(Script);
+    //   }
     },
     methods: {
     }
